@@ -1,0 +1,14 @@
+{
+    "name": "Go-Intro",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "golang.Go"
+            ]
+        }
+    },
+    "dockerComposeFile": "../docker-compose.yml",
+    "service": "go-intro",
+    "shutdownAction": "stopCompose",
+    "workspaceFolder": "/app"
+}

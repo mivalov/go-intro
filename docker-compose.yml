@@ -1,0 +1,19 @@
+
+services:
+
+  go-intro:
+    image: go-intro:1.21.6-bookworm
+    build:
+      context: .
+      dockerfile: go-intro.dockerfile
+    container_name: go-intro
+    hostname: go-intro
+    environment:
+      - TZ=Europe/Berlin
+    volumes:
+      - type: bind
+        source: ./
+        target: /app
+    stdin_open: true # docker run -i
+    tty: true        # docker run -t
+    restart: unless-stopped

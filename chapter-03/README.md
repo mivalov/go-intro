@@ -98,7 +98,7 @@ Three logical operators are used with boolean values:
 Computers use a base-2 binary system - 0 and 1.
 
 ### 2. We know that (in base 10) the largest 1 digit number is 9 and the largest 2 digit number is 99. Given that in binarz the largest 2 digit number is 11 (3), the largest 3 digit number is 111 (7) and the largest 4 digit number is 1111 (15). What is the largest 8 digit number?
-Hint: 10^1 - 1 = 9 and 10^2 - 1 = 99
+> Hint: 10^1 - 1 = 9 and 10^2 - 1 = 99
 
 2^8 - 1 = 256 - 1 = 255
 
@@ -118,4 +118,4 @@ func main() {
 A string is a sequence of characters with a definite length used to represent text. A string's length can be found with the `len()` operation.
 
 ### 5. What's the value of the expression `(true && false) || (false && true) || !(false && false)`?
-true
+(true && false) || (false && true) || !(false && false) = false || false || !(false) = false || true = true

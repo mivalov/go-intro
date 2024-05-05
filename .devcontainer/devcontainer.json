@@ -4,7 +4,8 @@
         "vscode": {
             "extensions": [
                 "golang.Go",
-                "EditorConfig.EditorConfig"
+                "EditorConfig.EditorConfig",
+                "DavidAnson.vscode-markdownlint"
             ]
         }
     },

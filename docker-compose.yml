@@ -13,7 +13,7 @@ services:
     volumes:
       - type: bind
         source: ./
-        target: /app
+        target: /home/gopher/go-intro
     stdin_open: true # docker run -i
     tty: true        # docker run -t
     restart: unless-stopped

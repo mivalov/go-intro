@@ -12,5 +12,5 @@
     "dockerComposeFile": "../docker-compose.yml",
     "service": "go-intro",
     "shutdownAction": "stopCompose",
-    "workspaceFolder": "/app"
+    "workspaceFolder": "/home/gopher/go-intro"
 }

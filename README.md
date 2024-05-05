@@ -1,6 +1,6 @@
 # Go Introduction
 
-This project is inspired by and follows the book "An Introduction to Programming in GO" by Caleb Doxsey.
+This project is inspired by the book "An Introduction to Programming in GO" by Caleb Doxsey.
 
 ## Docker Environment
 
@@ -12,7 +12,7 @@ This project is inspired by and follows the book "An Introduction to Programming
 ### Setup
 
 ```shell
-docker compose up -d
+make up
 ```
 
 ### Create a Go Module
@@ -26,8 +26,10 @@ go mod init example.com/project/name
 
 ## Useful Links
 
-[Official Golang Docker Image](https://hub.docker.com/_/golang)  
-[An Introduction to Programming in GO](https://www.golang-book.com/books/intro)  
-[Introducing Go](https://www.oreilly.com/library/view/introducing-go/9781491941997/)  
-[Go Documentation](https://go.dev/doc/)  
-[Effective Go](https://go.dev/doc/effective_go)  
+- [Official Golang Docker Image](https://hub.docker.com/_/golang)
+- [An Introduction to Programming in GO](https://www.golang-book.com/books/intro)
+- [Introducing Go](https://www.oreilly.com/library/view/introducing-go/9781491941997/)
+- [Go by Example](https://gobyexample.com/)
+- [Go Documentation](https://go.dev/doc/)
+- [Effective Go](https://go.dev/doc/effective_go)
+- [100 Go Mistakes and How to Avoid Them](https://100go.co/)

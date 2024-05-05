@@ -2,7 +2,7 @@
 services:
 
   go-intro:
-    image: go-intro:1.21.9-bookworm
+    image: go-intro:1.22.2-bookworm
     build:
       context: .
       dockerfile: go-intro.dockerfile

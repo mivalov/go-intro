@@ -1,19 +1,18 @@
 FROM golang:1.21.9-bookworm
 
-RUN apt-get update && apt-get -y upgrade
-
-RUN apt-get -y install \
-    less \
-    tree \
-    vim
-
-RUN apt-get -y autoremove \
+RUN apt-get update \
+    && apt-get -y upgrade \
+    && apt-get -y install \
+        less \
+        tree \
+        vim \
+    && apt-get -y autoremove \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 
-# RUN useradd -ms /bin/bash developer
-# USER developer
-WORKDIR /app
+RUN useradd -ms /bin/bash gopher
+USER gopher
+WORKDIR /home/gopher/go-intro
 
 # Official Go language server
 # https://pkg.go.dev/golang.org/x/tools/gopls

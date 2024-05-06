@@ -1,4 +1,4 @@
-# Chapter 4
+# Chapter 3
 
 ## Variables
 
@@ -9,6 +9,7 @@ Variables in Go are created bz first using the `var` keyword, then specifying th
 Names must start with a letter and may contain letters, numbers or the `_`(underscore) symbol. The Go compiler doesn't care what you name a variable so the name is meant for the developer's benefit. Pick names which clearly describe the variable's purpose.
 
 According to ["Effective Go: Mixed Caps"](https://go.dev/doc/effective_go#mixed-caps):
+
 ```text
 Finally, the convention in Go is to use MixedCaps or mixedCaps rather than underscores to write multiword names.
 ```
@@ -85,12 +86,12 @@ package main
 import "fmt"
 
 func main() {
-	fmt.Print("Enter a degrees in Fahrenheit: ")
-	var fahrenheit float64
-	fmt.Scanf("%f", &fahrenheit)
+    fmt.Print("Enter a degrees in Fahrenheit: ")
+    var fahrenheit float64
+    fmt.Scanf("%f", &fahrenheit)
 
-	celsius := (fahrenheit - 32) * 5 / 9
-	fmt.Println(celsius)
+    celsius := (fahrenheit - 32) * 5 / 9
+    fmt.Println(celsius)
 }
 ```
 
@@ -102,11 +103,11 @@ package main
 import "fmt"
 
 func main() {
-	fmt.Print("Enter length (in ft): ")
-	var feet float64
-	fmt.Scanf("%f", &feet)
+    fmt.Print("Enter length (in ft): ")
+    var feet float64
+    fmt.Scanf("%f", &feet)
 
-	meters := feet * 0.3048
-	fmt.Println(meters)
+    meters := feet * 0.3048
+    fmt.Println(meters)
 }
 ```

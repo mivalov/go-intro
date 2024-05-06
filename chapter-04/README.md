@@ -1,4 +1,4 @@
-# Chapter 5
+# Chapter 4
 
 ## Control Structures
 
@@ -8,11 +8,11 @@ The `for` statement allows us to repeat a list of statements (a block of code) m
 
 ```go
 func main() {
-	i := 1  // store number to print
-	for i <= 10 {  // conditional expression
-		fmt.Println(i)
-		i++  // variable incrementation (same as i += 1)
-	}
+    i := 1  // store number to print
+    for i <= 10 {  // conditional expression
+        fmt.Println(i)
+        i++  // variable incrementation (same as i += 1)
+    }
 }
 ```
 
@@ -23,9 +23,9 @@ Alternative approach to the `for` loop is the following:
 ```go
 func main() {
     // variable initialization; condition; variable incrementation
-	for i := 1; i <= 10; i++ {
-		fmt.Println(i)
-	}
+    for i := 1; i <= 10; i++ {
+        fmt.Println(i)
+    }
 }
 ```
 
@@ -68,7 +68,7 @@ Just like an `if` statement, each case is checked from top to bottom and the fir
 
 ## Problems
 
-### 1. What does the following program print:
+### 1. What does the following program print
 
 ```go
 i := 10
@@ -89,15 +89,15 @@ package main
 import "fmt"
 
 func main() {
-	for i := 1; i <= 100; i++ {
-		if i%3 == 0 {
-			fmt.Println(i)
-		}
-	}
+    for i := 1; i <= 100; i++ {
+        if i%3 == 0 {
+            fmt.Println(i)
+        }
+    }
 }
 ```
 
-### 3. Write a program that prints the numbers from 1 to 100. But for multiples of three print "Fizz" instead of the number and for the multiples of five print "Buzz". For numbers which are multiples of both three and five print "FizzBuzz".
+### 3. Write a program that prints the numbers from 1 to 100. But for multiples of three print "Fizz" instead of the number and for the multiples of five print "Buzz". For numbers which are multiples of both three and five print "FizzBuzz"
 
 ```go
 package main
@@ -106,15 +106,15 @@ import "fmt"
 
 func main() {
     for i := 1; i <= 100; i++ {
-		if i%3 == 0 && i%5 == 0 {
-			fmt.Println("FizzBuzz")
-		} else if i%3 == 0 {
-			fmt.Println("Fizz")
-		} else if i%5 == 0 {
-			fmt.Println("Buzz")
-		} else {
-			fmt.Println(i)
-		}
-	}
+        if i%3 == 0 && i%5 == 0 {
+            fmt.Println("FizzBuzz")
+        } else if i%3 == 0 {
+            fmt.Println("Fizz")
+        } else if i%5 == 0 {
+            fmt.Println("Buzz")
+        } else {
+            fmt.Println(i)
+        }
+    }
 }
 ```

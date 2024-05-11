@@ -29,6 +29,14 @@ func main() {
 }
 ```
 
+Another way of accomplishing the basic “do this N times” iteration is range over an integer.
+
+```go
+for i := range 3 {
+    fmt.Println("range", i)
+}
+```
+
 ### If
 
 The `if` statement provides a way of choosing to do different things (execute code blocks) based on a condition. It also has an optional `else` part. If the condition evaluates to `true` then the block after the condition is run, otherwise either the block is skipped or if the `else` block is present that block is run. Furthermore, `if` statements can also have one or more `else if` parts as further conditions.
